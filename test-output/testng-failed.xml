@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [POM BDD]">
+  <test name="Web driver University Test">
+    <classes>
+      <class name="com.runners.MainRunner"/>
+    </classes>
+  </test> <!-- Web driver University Test -->
+  <test name="Web driver University Test(failed)">
+    <classes>
+      <class name="com.runners.MainRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.runners.MainRunner -->
+    </classes>
+  </test> <!-- Web driver University Test(failed) -->
+</suite> <!-- Failed suite [POM BDD] -->
